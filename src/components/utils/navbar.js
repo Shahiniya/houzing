@@ -4,6 +4,7 @@ import Register from '../../components/pages/register/index';
 import Rent from '../../components/pages/rent/index';
 import Sell from '../../components/pages/sell/index';
 import Home from '../../components/home/index';
+import Login from '../../components/login/login'
 
 
 export const navbar =[
@@ -56,5 +57,13 @@ child:[],
     icon: '',
     child:[],
       },
+      {
+        id:7,  
+        title:'Login',
+        path:'/login',
+        element:<Login/>,
+        icon: '',
+        child:[],
+          },
 // 
 ]

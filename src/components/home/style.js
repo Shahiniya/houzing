@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {ReactComponent as search} from '../../assets/icons/search.svg'
 
 const Container = styled.div`
 width:100%;
@@ -60,10 +61,21 @@ width:1500px;
 height:300px;
 background-color:red;
 display:flex;
+justify-content:center;
 `;
 const Input = styled.div` 
 width:25%;
 height:200px;
-background:blue;
+background:white;
+input{
+border:none;
+border-bottom:solid 5px #E6E9EC;
+
+}
 `;
-export {Input,Container,Title,Box,Link};
+const Search = styled(search)`
+width:10px;
+height:10px;
+z-index:3;
+`;
+export {Search,Input,Container,Title,Box,Link};

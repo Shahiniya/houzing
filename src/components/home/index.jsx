@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container,Title,Box,Link ,Input} from './style';
+import { Container,Title,Box,Link ,Input, Search} from './style';
 import landing from '../../assets/images/landing.jpg' 
 // import Navbar from '../navbar/navbar';
 import {NavLink} from 'react-router-dom';
@@ -9,9 +9,7 @@ import {NavLink} from 'react-router-dom';
 export const Home = () => {
   return (
     <Container style={{background:`url(${landing})`, backgroundRepeat:'no-repeat', backgroundSize:'cover', }}>
-        
-    <NavLink to = {'/Home'}>
-      <Title>
+              <Title>
         <h5>IT'S GREAT TO BE HOME</h5>
         <p>FIND YOUR PERFECT HOME</p>
       </Title>
@@ -20,8 +18,7 @@ export const Home = () => {
         <NavLink  style={{fontSize:'20px', margin:'20px',color:'white'}} to={'/Rent'}>Rent</NavLink>
         <NavLink  style={{fontSize:'20px', margin:'20px',color:'white'}} to={'/Sell'}>Sold</NavLink>
         </Link>
-        </NavLink>
-
+       
       <Box>
       <Input>
       <h3>TYPE</h3>
@@ -34,6 +31,7 @@ export const Home = () => {
       <Input>
       <h3>SEARCH</h3>
       <input placeholder='Enter keywords'/>
+      <Search/>
       </Input>
       </Box>
     </Container>
