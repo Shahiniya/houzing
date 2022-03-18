@@ -1,8 +1,9 @@
 import React from 'react';
-import {navbar} from '../../components/utils/navbar.js'
+import {navbar} from '../../utils/navbar.js'
 import {Container, Img, Navbarleft, Navbarright} from './style';
 import {NavLink} from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
+// console.log(process.env) 
 
 
 export const Navbar = () => {
@@ -22,10 +23,10 @@ export const Navbar = () => {
             }
           }}>Housing</NavLink>
     </Navbarleft>
-    <Navbarright>
+    <Navbarright >
     {navbar.map((value) =>{
         return(
-            <NavLink style={({isActive}) => {
+            <NavLink key={value.id} style={({isActive}) => {
                   return{
                       color: isActive ? 'coral' : 'black',
                       

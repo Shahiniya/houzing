@@ -1,10 +1,10 @@
-import Buy from '../../components/pages/buy/index';
-import Myprofile  from '../../components/pages/myprofiles/index';
-import Register from '../../components/pages/register/index';
-import Rent from '../../components/pages/rent/index';
-import Sell from '../../components/pages/sell/index';
-import Home from '../../components/home/index';
-import Login from '../../components/login/login'
+import Buy from '../components/pages/buy/index';
+import Myprofile  from '../components/pages/myprofiles/index';
+import Register from '../components/pages/registerss/index';
+import Rent from '../components/pages/rent/index';
+import Sell from '../components/pages/sell/index';
+import Home from '../components/home/index';
+import Login from '../components/pages/register/login'
 
 
 export const navbar =[
@@ -33,14 +33,14 @@ child:[],
     icon: '',
     child:[],
     },
-  {
-   id:4,
-   title:'Register',
-   path:'/Register',
-   element:<Register/>,
-   icon: '',
-   child:[],
-   },
+  // {
+  //  id:4,
+  //  title:'Register',
+  //  path:'/Register',
+  //  element:<Register/>,
+  //  icon: '',
+  //  child:[],
+  //  },
  {
     id:5,
     title:'Rent',
@@ -59,7 +59,7 @@ child:[],
       },
       {
         id:7,  
-        title:'Login',
+        title:'REGISTER',
         path:'/login',
         element:<Login/>,
         icon: '',

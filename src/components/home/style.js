@@ -78,9 +78,5 @@ width:10px;
 height:10px;
 z-index:3;
 `;
-const Search = styled(search)`
-width:10px;
-height:10px;
-z-index:3;
-`;
+
 export {Search,Input,Container,Title,Box,Link};
