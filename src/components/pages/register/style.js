@@ -12,7 +12,10 @@ width:100%;
 height:300px;
 background-color:blue;
 z-index:3;
-filter:brightness(0.6);
+box-sizing:border-box;
+background-repeat:no-repeat;
+background-size:100% 100%;
+/* filter:brightness(0.6); */
 margin-top:150px;
 display:flex;
 flex-direction:column;

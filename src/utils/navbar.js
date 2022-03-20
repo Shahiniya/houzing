@@ -1,6 +1,6 @@
 import Buy from '../components/pages/buy/index';
 import Myprofile  from '../components/pages/myprofiles/index';
-import Register from '../components/pages/registerss/index';
+// import Register from '../components/pages/registerss/index';
 import Rent from '../components/pages/rent/index';
 import Sell from '../components/pages/sell/index';
 import Home from '../components/home/index';

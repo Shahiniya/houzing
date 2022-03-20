@@ -48,14 +48,17 @@ export const Login = () => {
     console.log(login)
    }
       const onAdd = ()=>{
-        fetch('https://houzing-app.herokuapp.com/api/public/auth/register',{
+        fetch(`${url}/api/public/auth/register`,{
           method:'POST',
           headers:{'Content-Type':'application/json'},
           body:JSON.stringify(login)
         })
         .then((res)=>res.json())
         .then(res => {
-          localStorage.setItem('Token',res?.data)       
+          localStorage.setItem('Token',res?.data);
+          if(res?.success && res?.data){
+            navigate('/Myprofile')
+          }       
         } )
       }
  
@@ -77,9 +80,9 @@ export const Login = () => {
 
  <Container1 style={{background:`url(${hero})`, backgroundRepeat:'no-repeat', backgroundSize:'cover', }}>
  <h2 >My Account</h2>
+ <h5>Home/My account</h5>
  </Container1>   
       <Title>
- <h5>Home/My account</h5>
       
       </Title>
     <Container2>
