@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 import {ReactComponent as search} from '../../assets/icons/search.svg'
+import landing from '../../assets/images/landing.jpg' 
 
 const Container = styled.div`
 width:100%;
 height:1200px;
-filter:brightness(0.5);
+/* background:${`url(${landing})`}; */
+background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7),url(${landing}));
 display:flex;
 flex-direction:column;
 justify-content:center;

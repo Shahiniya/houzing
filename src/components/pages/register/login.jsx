@@ -1,7 +1,7 @@
 import React from 'react'
 import { Checkbox, Container,Container1,Container2,Input, Inputs, Registration, Title, Username } from './style';
-import { useNavigate,NavLink } from 'react-router-dom';
-import {useState,useEffect} from 'react';
+import { useNavigate} from 'react-router-dom';
+import {useState} from 'react';
 import hero from '../../../assets/images/propertyHero.png' 
 
 const {REACT_APP_BASE_URL: url} = process.env
@@ -71,7 +71,8 @@ export const Login = () => {
         .then((res)=>res.json())
         .then(res => {
           localStorage.setItem('Token',res?.data) 
-          
+          if(res?.success && res?.data){
+            navigate('/Myprofile')}
          } )
       }
 
