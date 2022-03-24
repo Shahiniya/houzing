@@ -1,7 +1,7 @@
 import React from 'react'
 import {Search1,Input0,Input1, Container,Title,Box,Link ,Input, Search, Container1, Advanced, Button} from './style';
 import landing from '../../assets/images/landing.jpg' 
-// import Navbar from '../navbar/navbar';
+import {Footer} from '../footer/index';
 import {NavLink} from 'react-router-dom';
 
 
@@ -48,6 +48,7 @@ export const Home = () => {
       </Button>
       </Box>
       </Container1>
+      <Footer/>
     </Container>
   )
 }

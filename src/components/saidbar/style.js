@@ -16,14 +16,21 @@ margin-left:30px;
 `;
 const Image = styled.img`
 margin:0 10px;
-/* background-color:blue; */
-
-    fill:blue;
-
+path{
+fill:red;
+}
 `;
 const Saidbars = styled.div`
 display:flex;
 margin:20px;
+h3{
+    font-family: 'Cerebri Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+color: #0D263B;
+
+}
 `;
 
 export {Saidbars,Image,Container,Container1};

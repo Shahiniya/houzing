@@ -3,7 +3,7 @@ import {ReactComponent as search} from '../../assets/icons/search.svg'
 import landing from '../../assets/images/landing.jpg' 
 import {ReactComponent as advanced} from '../../assets/icons/advancedSearch.svg'
 const Container = styled.div`
-height: 91.7vh;
+height: 100%;
 overflow: hidden;
 width:100%;
 `;

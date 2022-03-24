@@ -9,8 +9,8 @@ export const Saidbar = () => {
    {    
        saidbar.map((value)=>{
            return(
-               <Saidbars>
-                    <Image src={value.icon}/>
+               <Saidbars key={value.id}>
+                    <Image style={{fill:'red',color:'red'}} src={value.icon}/>
                     <h3>{value.title}</h3>
                </Saidbars>
            )
