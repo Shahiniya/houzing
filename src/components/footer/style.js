@@ -3,7 +3,7 @@ import { ReactComponent as telg } from '../../assets/icons/twitter.svg';
 import { ReactComponent as logo } from '../../assets/icons/logo.svg';
 const BigWrapper = styled.div`
 width:100%;
-height:650px;
+height:580px;
 background-color:#0D263B;
 margin:20px 20px 60px 0px;
 position:relative;
@@ -12,10 +12,10 @@ position:relative;
 
 const MiddleWrapper = styled.div`
 display:flex;
-margin:70px 20px 60px 150px;
+margin:0px 20px 60px 150px;
 /* background-color:green; */
 width:1700px;
-height:500px;
+height:430px;
 
 `;
 
@@ -23,7 +23,7 @@ const ContactUs = styled.div`
 width:250px;
 height:300px;
 /* background-color:red; */
-margin:80px 20px 0px 20px;
+margin:60px 20px 0px 20px;
 display:flex;
 flex-direction:column;
 h4{
@@ -87,7 +87,7 @@ const Discover = styled.div`
 width:250px;
 height:300px;
 /* background-color:red; */
-margin:80px 20px 0px 100px;
+margin:60px 20px 0px 100px;
 h3{
 font-family: 'Cerebri Sans';
 font-style: normal;
@@ -109,7 +109,7 @@ const ListCategory = styled.div`
 width:250px;
 height:300px;
 /* background-color:red; */
-margin:80px 20px 0px 20px;
+margin:60px 20px 0px 20px;
 h3{
 font-family: 'Cerebri Sans';
 font-style: normal;
@@ -131,7 +131,7 @@ const QuickLinks = styled.div`
 width:250px;
 height:300px;
 /* background-color:red; */
-margin:80px 20px 0px 20px;
+margin:60px 20px 0px 20px;
 h3{
 font-family: 'Cerebri Sans';
 font-style: normal;
@@ -153,7 +153,7 @@ const Subscribe = styled.div`
 width:250px;
 height:300px;
 /* background-color:red; */
-margin:80px 20px 0px 20px;
+margin:60px 20px 0px 20px;
 h3{
 font-family: 'Cerebri Sans';
 font-style: normal;

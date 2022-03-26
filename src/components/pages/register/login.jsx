@@ -3,6 +3,7 @@ import { Checkbox, Container,Container1,Container2,Input, Inputs, Registration, 
 import { useNavigate} from 'react-router-dom';
 import {useState} from 'react';
 import hero from '../../../assets/images/propertyHero.png' 
+import { Footer } from '../../footer';
 
 const {REACT_APP_BASE_URL: url} = process.env
 console.log(process.env)
@@ -115,6 +116,7 @@ export const Login = () => {
        </Inputs>
      </Registration>
      </Container2>
+     <Footer></Footer>
  </Container>
   )
 }
