@@ -29,6 +29,9 @@ const Img = styled.img`
 margin-left:255px;
 width:40px;
 height:48px;
+fill{
+    color:blue;
+}
 `;
 
 const Navbarright = styled.div`

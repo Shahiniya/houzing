@@ -13,13 +13,14 @@ export const Navbar = () => {
     <Img src={logo} alt='test'/>
     <NavLink  to = {'/Home'} style={()=>{
       return{
+        background: '/Home' ? 'none' : 'white',
         fontFamily: 'Cerebri Sans',
         fontStyle: 'normal',
         fontWeight:'700',
         fontSize: '25px',
         lineHeight: '32px',
         margin:'11px',
-        color:'white',
+        color:'#0D263B',
             }
           }}>Housing</NavLink>
     </Navbarleft>
@@ -28,7 +29,7 @@ export const Navbar = () => {
         return(
             <NavLink key={value.id} style={({isActive}) => {
                   return{
-                      color: isActive ? 'coral' : 'black',
+                      color: isActive ? 'blue' : 'black',
                       
                   }}}
                    className='navbar' 

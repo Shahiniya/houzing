@@ -1,5 +1,5 @@
 import Buy from '../components/pages/buy/index';
-import Myprofile  from '../components/pages/myprofiles/index';
+import Myproperties  from '../components/pages/myproperties/index';
 // import Register from '../components/pages/registerss/index';
 import Rent from '../components/pages/rent/index';
 import Sell from '../components/pages/sell/index';
@@ -27,9 +27,9 @@ child:[],
 
 {
     id:3,
-    title:'My Profile',
-    path:'/Myprofile',
-    element:<Myprofile/>,
+    title:'My Properties',
+    path:'/Myproperties',
+    element:<Myproperties/>,
     icon: '',
     child:[],
     },
@@ -59,7 +59,7 @@ child:[],
       },
       {
         id:7,  
-        title:'REGISTER',
+        title:'REGISTER/LOGIN',
         path:'/login',
         element:<Login/>,
         icon: '',

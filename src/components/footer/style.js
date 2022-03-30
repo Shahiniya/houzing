@@ -5,7 +5,7 @@ const BigWrapper = styled.div`
 width:100%;
 height:580px;
 background-color:#0D263B;
-margin:20px 20px 60px 0px;
+margin:20px 20px 0px 0px;
 position:relative;
 
 `;

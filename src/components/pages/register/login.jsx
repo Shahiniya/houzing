@@ -4,6 +4,7 @@ import { useNavigate} from 'react-router-dom';
 import {useState} from 'react';
 import hero from '../../../assets/images/propertyHero.png' 
 import { Footer } from '../../footer';
+import { toast } from 'react-toastify';
 
 const {REACT_APP_BASE_URL: url} = process.env
 console.log(process.env)
@@ -26,14 +27,7 @@ export const Login = () => {
     })   
 
     const navigate = useNavigate();
-    // useEffect(()=>{
-    //   fetch('https://houzing-app.herokuapp.com',{
-    //     method:'POST',
-    //     headers:{'Content-Type':'application/json'},
-    //     body:JSON.stringify(register)
-    //   })
-    // })
-
+    
     const onChange = (e)=>{
       
        const {value,name} = e.target;
@@ -52,22 +46,26 @@ export const Login = () => {
         fetch(`${url}/api/public/auth/register`,{
           method:'POST',
           headers:{'Content-Type':'application/json'},
-          body:JSON.stringify(login)
+          body:JSON.stringify(register)
         })
         .then((res)=>res.json())
         .then(res => {
+          console.log(res,'resss');
           localStorage.setItem('Token',res?.data);
-          if(res?.success && res?.data){
-            navigate('/Myprofile')
+          if(res?.data?.success){
+
           }       
         } )
+        toast.success('You have been registered.Please sign to enter the website')
+        // alert('success')
+
       }
  
       const onLogin =() =>{
         fetch('https://houzing-app.herokuapp.com/api/public/auth/login',{
           method:'POST',
           headers:{'Content-Type':'application/json'},
-          body:JSON.stringify(register)
+          body:JSON.stringify(login)
         })
         .then((res)=>res.json())
         .then(res => {
@@ -81,11 +79,11 @@ export const Login = () => {
  <Container>
 
  <Container1 style={{background:`url(${hero})`, backgroundRepeat:'no-repeat', backgroundSize:'cover', }}>
- <h2 >My Account</h2>
- <h5>Home/My account</h5>
+ 
  </Container1>   
       <Title>
-      
+      <h2 >My Account</h2>
+ <h5>Home/My account</h5>
       </Title>
     <Container2>
      <Input>
@@ -112,7 +110,7 @@ export const Login = () => {
           <input name='lastname' onChange={onChange} value={register.lastname}  type='text' placeholder='Last Name' />
           <input name='email' onChange={onChange} value={register.email}  type='email' placeholder='Email' />
           <input name='password' onChange={onChange} value={register.password}  type='password' placeholder='Password' />
-          <button onClick={()=>onAdd} >Register</button>
+          <button onClick={onAdd} >Register</button>
        </Inputs>
      </Registration>
      </Container2>

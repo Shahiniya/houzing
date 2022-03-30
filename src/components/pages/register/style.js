@@ -2,16 +2,19 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 width:100%;
-height:3200px;
+height:1700px;
 background-color:#E5E5E5;
 display:flex;
 flex-direction:column;
+overflow:hidden;
 `;
 const Container1 = styled.div`
 width:100%;
 height:300px;
 background-color:blue;
 z-index:3;
+position:relative;
+filter:brightness(0.5);
 box-sizing:border-box;
 background-repeat:no-repeat;
 background-size:100% 100%;
@@ -21,6 +24,13 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
+
+`;
+const Title = styled.div`
+z-index:5;
+position:absolute;
+top:250px;
+left:900px;
 h2{
 font-family: 'Cerebri Sans';
 font-style: normal;
@@ -31,20 +41,6 @@ text-align: center;
 margin-bottom:20px;
 color:white;
 }
-h5{
-    font-family: 'Cerebri Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 18px;
-text-align: center;
-color:white;
-z-index:5;
-
-}
-`;
-const Title = styled.div`
-z-index:5;
 h5{
     font-family: 'Cerebri Sans';
 font-style: normal;

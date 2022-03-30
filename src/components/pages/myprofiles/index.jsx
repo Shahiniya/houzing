@@ -1,13 +1,13 @@
 import {React,useState} from 'react'
 import { Doc,Image,Last,Box, Contact, ContactInformation, Container, First, Title, Update, Wrapper, AboutMe, MiddleWrapper, BoxWrapper, Photo, ChangePassword, NewPassword } from './style';
 import {NavLink} from 'react-router-dom';
-import {Saidbar} from '../../../components/saidbar/index'
+import {Saidbar} from '../../saidbar/index'
 import hero from '../../../assets/images/propertyHero.png'
 
 export const Myprofile = () => {
 
   const [change,setChange] = useState({
-    tetx:'',
+    text:'',
     email:'',
     number:'',
   });
