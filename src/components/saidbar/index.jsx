@@ -1,10 +1,13 @@
 import React from 'react'
-import {Saidbars,Container,Container1,Image} from './style'
+import {Saidbars,Container,Container1,Image, WrapperContainer} from './style'
 import {saidbar} from '../../utils/saidbar';
-import { NavLink } from 'react-router-dom';
+import { NavLink,Outlet} from 'react-router-dom';
+import { BigContainer } from '../pages/favorite/style';
 
 export const Saidbar = () => {
   return (
+  <WrapperContainer>
+      <BigContainer>
     <Container>
     <Container1>
    {    
@@ -12,18 +15,20 @@ export const Saidbar = () => {
            return(
                <NavLink className='Saidbars' to={value.path} key={value.id} style={({isActive})=>{
                  return{
-                  // background: isActive ? 'blue' : 'black'
-
-                 }
+                  color: isActive ? 'blue' : 'black'}
                }
                }>
-                    <Image style={{fill:'red',color:'red'}} src={value.icon}/>
+                    <Image src={value.icon}/>
                     <h3>{value.title}</h3>
                </NavLink>
            )
        })
    }
    </Container1>
+
    </Container>
+  <Outlet/>
+  </BigContainer>
+   </WrapperContainer>
   )
 }

@@ -1,13 +1,15 @@
 import React from 'react'
-import { BigContainer,Img, BodyContainer, Card, CardContainer, Title, WrapperContainer, Title2, ImgWrapper, CardTitle, CardWrapper } from './style';
-import {Saidbar} from '../../../components/saidbar/index'
+import { BigContainer,Img, BodyContainer, Card, CardContainer, Title, WrapperContainer, Title2, ImgWrapper, CardTitle, CardWrapper, WrapperContainer1 } from './style';
+import Navbar from '../../../components/navbar/navbar'
 import { search } from '../../../utils/search';
 
 export const Search = () => {
   return (
+   
     <WrapperContainer>
+    <Navbar/>
         <BigContainer>
-          <Saidbar/>
+
             <BodyContainer>
 
                 <Title>
@@ -25,7 +27,7 @@ export const Search = () => {
                 <CardContainer>
                   {
                     search.map((value)=>(
-                      <Card>
+                      <Card key={value.id}>
                           <h3>{value.title}</h3>
                          <h4>{value.data}</h4>
                           <ImgWrapper>
@@ -45,6 +47,7 @@ export const Search = () => {
     
     
   </WrapperContainer>
+ 
   )
 }
 export default Search;

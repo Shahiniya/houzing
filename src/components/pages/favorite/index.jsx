@@ -1,9 +1,9 @@
 import {React,useState} from 'react'
 import {useEffect} from 'react-router-dom';
 import { BigContainer,Img, BodyContainer, Card, CardContainer, Title, WrapperContainer, Title2 } from './style';
-import {Saidbar} from '../../../components/saidbar/index'
+import Navbar from '../../../components/navbar/navbar'
 import {shops} from '../../../utils/shop'
-import { getValue } from '@testing-library/user-event/dist/utils';
+// import { getValue } from '@testing-library/user-event/dist/utils';
 const {REACT_APP_BASE_URL: url} = process.env
 
 export const Favorite = () => {
@@ -19,8 +19,9 @@ export const Favorite = () => {
   // },[])
   return (
     <WrapperContainer>
+    <Navbar/>
         <BigContainer>
-          <Saidbar/>
+         
             <BodyContainer>
 
                 <Title>
@@ -31,7 +32,7 @@ export const Favorite = () => {
                 <CardContainer>
                   {
                     shops.map((value)=>(
-                      <Card>
+                      <Card key={value.id}>
                       <Img  src={value.src0} alt='test' />
                       <Title2>
                       <h3>{value.title}</h3>

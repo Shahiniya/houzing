@@ -1,23 +1,31 @@
 import styled from 'styled-components';
 
+
 const WrapperContainer = styled.div`
 width:100%;
-height:1300px;
-background-color:white;
+height:1000px;
+/* background-color:red; */
+display:flex;
+flex-direction:column;
 overflow:hidden;
+/* margin-top:50px; */
+/* padding-top:50px; */
+
 `;
 const BigContainer = styled.div`
 width:100%;
 height:100%;
-background-color:#E5E5E5;
+/* background-color:blue; */
 display:flex;
-margin-top:150px;
+/* margin-top:80px; */
+
 `;
 const BodyContainer = styled.div`
 width:100%;
 height:1300px;;
 background-color:#E5E5E5;;
-/* margin-top:200px; */
+/* background:red; */
+margin-left:80px;
 `;
 const Title = styled.div`
 width:100%;
@@ -47,7 +55,9 @@ height: 750px;
 background: #ffffff;
 border-radius: 3px ;
 margin-left:50px;
-margin-top:100px;
+margin-top:30px;
+display:flex;
+flex-direction:column;
 
 `;
 
@@ -58,7 +68,7 @@ display:flex;
 background: #E6E9EC;
 border-radius: 3px ;
 margin-left:50px;
-margin-top:100px;
+margin-top:50px;
 
 h3{
     margin:50px 100px;

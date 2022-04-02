@@ -31,7 +31,7 @@ export const Buy = () => {
             {
               shop.map((value)=>{
                return(
-                 <Card1>
+                 <Card1 key={value.id}>
                   <Card>
                 <Img src={value.src} />
                 <h4>{value.title}</h4>

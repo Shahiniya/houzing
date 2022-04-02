@@ -1,22 +1,34 @@
 import styled from 'styled-components';
 import {ReactComponent as doc} from '../../../assets/icons/document.svg'
 const Wrapper = styled.div`
-width:100%;
-height:1700px;
-/* background: #E5E5E5; */
-display:flex;
-`;
-const Container = styled.div`
-width:100%;
+width:1900px;;
 height:1600px;
 background: #E5E5E5;
+display:flex;
+
+`;
+
+const BigContainer = styled.div`
+width:100%;
+height:100%;
+background-color:#E5E5E5;
+display:flex;
+margin-top:150px;
+
+
+`;
+
+const Container = styled.div`
+width:100%;
+height:1500px;
+background: #E5E5E5;
 background-color:#ffff;
-margin:50px 20px 0 30px;
+margin:70px 20px 0 80px;
 
 
 `;
 const Title = styled.div`
-margin:144px 20px 0 55px;
+margin:50px 20px 0 55px;
 h5{
 margin-bottom:60px;
 font-family: 'Cerebri Sans';
@@ -39,7 +51,7 @@ color: #0D263B;
 }
 `;
 const Box = styled.div`
-width:90%;
+width:1600px;
 height:930px;
 margin:50px 20px 0 30px;
 
@@ -47,14 +59,15 @@ margin:50px 20px 0 30px;
 const Contact = styled.div`
 background-color:#ffff;
 display:flex;
+width:1600px;
 /* flex-direction:column; */
 `;
 const ContactInformation = styled.div`
 display:flex;
 flex-direction:column;
-margin:20px;
+margin-left:50px;
 height: 866px;
-width: 1140px;
+width: 1240px;
 border-radius: 3px;
 background: #FFFFFF;
 border: 1px solid #E6E9EC;
@@ -161,12 +174,13 @@ color:#ffffff;
 }
 `;
 const Photo = styled.div`
-width: 330px;
+width: 400px;
 height: 580px;
 border: 1px solid #E6E9EC;
 box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
 border-radius: 3px;
-margin:20px;
+margin-left:40px;
+margin-top:20px;
 h3{
 margin:15px;
 width: 45px;
@@ -197,7 +211,7 @@ justify-content:center;
 align-items:center;
 position: relative;
 button{
-width: 230px;
+width: 350px;
 height: 45px;
 background: #FFFFFF;
 border: 1px solid #0061DF;
@@ -217,7 +231,7 @@ left:60px;
 `;
 
 const Image = styled.img`
-width:250px;
+width:350px;
 height:400px;
 margin-bottom:20px;
 
@@ -230,7 +244,7 @@ background: #FFFFFF;
 border: 1px solid #E6E9EC;
 box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
 border-radius: 3px;
-margin:0px 20px 0 45px;
+margin:0px 20px 0 75px;
 h3{
 width: 136px;
 height: 20px;
@@ -271,4 +285,4 @@ width:1110px;
 `;
 
 
-export {NewPassword,Doc,Image,Photo,BoxWrapper,MiddleWrapper,AboutMe,Wrapper,Last,First,Update,ContactInformation,Contact,Container,Title,Box,ChangePassword,};
+export {BigContainer,NewPassword,Doc,Image,Photo,BoxWrapper,MiddleWrapper,AboutMe,Wrapper,Last,First,Update,ContactInformation,Contact,Container,Title,Box,ChangePassword,};

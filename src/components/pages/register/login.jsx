@@ -53,10 +53,13 @@ export const Login = () => {
           console.log(res,'resss');
           localStorage.setItem('Token',res?.data);
           if(res?.data?.success){
+            toast.success('You have been registered.Please sign to enter the website')
 
-          }       
+          }   
+          else{
+            toast.error(res?.message)
+          }   
         } )
-        toast.success('You have been registered.Please sign to enter the website')
         // alert('success')
 
       }

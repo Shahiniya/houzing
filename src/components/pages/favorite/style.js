@@ -5,31 +5,36 @@ width:100%;
 height:1300px;
 background-color:white;
 overflow:hidden;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 `;
 const BigContainer = styled.div`
 width:100%;
 height:100%;
 background-color:#E5E5E5;
 display:flex;
-margin-top:150px;
+margin-left:0px;
 `;
 const BodyContainer = styled.div`
 width:100%;
 height:1300px;;
 background-color:#E5E5E5;;
-/* margin-top:200px; */
+margin-left:80px;
 `;
 const Title = styled.div`
 width:100%;
 height:100px;
 /* background-color:blue; */
-margin:80px 50px 30px 50px;
+margin:50px 50px 30px 50px;
 h2{
 font-family: 'Cerebri Sans';
 font-style: normal;
 font-weight: 600;
 font-size: 30px;
 color: #0D263B;
+margin-bottom:20px;
 }
 h5{
 font-family: 'Cerebri Sans';

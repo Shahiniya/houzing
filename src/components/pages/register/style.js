@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 width:100%;
-height:1700px;
+height:1900px;
 background-color:#E5E5E5;
 display:flex;
 flex-direction:column;
@@ -19,7 +19,7 @@ box-sizing:border-box;
 background-repeat:no-repeat;
 background-size:100% 100%;
 /* filter:brightness(0.6); */
-margin-top:150px;
+margin-top:450px;
 display:flex;
 flex-direction:column;
 justify-content:center;

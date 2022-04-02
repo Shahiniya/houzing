@@ -1,8 +1,11 @@
 import {React,useState} from 'react'
 import { Doc,Image,Last,Box, Contact, ContactInformation, Container, First, Title, Update, Wrapper, AboutMe, MiddleWrapper, BoxWrapper, Photo, ChangePassword, NewPassword } from './style';
 import {NavLink} from 'react-router-dom';
-import {Saidbar} from '../../saidbar/index'
+// import {Saidbar} from '../../saidbar/index'
 import hero from '../../../assets/images/propertyHero.png'
+import { BigContainer } from '../favorite/style';
+import Navbar from '../../../components/navbar/navbar'
+
 
 export const Myprofile = () => {
 
@@ -24,7 +27,9 @@ export const Myprofile = () => {
   }
   return (
     <Wrapper>
-    <Saidbar/>
+    <Navbar/>
+    <BigContainer>
+        
     <Container>
       <Title>
         <h2>My Profile</h2>
@@ -63,6 +68,8 @@ export const Myprofile = () => {
                <button onClick={()=>onAdd}>UPDATE PROFILE</button>
             </Update>
           </ContactInformation>
+         
+         
           <Photo>
           <h3>Photo</h3>
           <BoxWrapper>
@@ -87,6 +94,8 @@ export const Myprofile = () => {
         </ChangePassword>
 
    </Container>
+   </BigContainer>
+
     </Wrapper>
   )
 }

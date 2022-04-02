@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  /* background-color: #e5e5e5; */
  /* background-image: url('landing.png'); */
 }
 
@@ -13,5 +14,6 @@ body {
 .navbar{
   margin:11px 30px;
 justify-content:right;
+text-decoration:none;
 
 }

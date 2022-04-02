@@ -18,7 +18,7 @@ import {shops} from '../../../utils/shop'
             <CardContainer>
               {
                 shops.map((value)=>(
-                  <Card>
+                  <Card key={value.id}>
                   <Img  src={value.src0} alt='test' />
                   <Title2>
                   <h3>{value.title}</h3>

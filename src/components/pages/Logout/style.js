@@ -11,6 +11,7 @@ button{
 width:200px;
 height:80px;
 background-color:red;
+border-radius:5px;
 }
 `;
 

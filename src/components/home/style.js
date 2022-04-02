@@ -2,14 +2,18 @@ import styled from 'styled-components';
 import {ReactComponent as search} from '../../assets/icons/search.svg'
 import landing from '../../assets/images/landing.jpg' 
 import {ReactComponent as advanced} from '../../assets/icons/advancedSearch.svg'
+
+
 const Container = styled.div`
-height: 2050px;
+height: 2350px;
 overflow: hidden;
 width:100%;
+display:flex;
+flex-direction:column;
 `;
 const Container1 = styled.div`
  display: flex;
-  background-color: #7a8691;
+  /* background-color: #7a8691; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -17,7 +21,7 @@ const Container1 = styled.div`
     url(${landing});
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 85vh;
+  height: 160vh;
   overflow: hidden;
 `;
 
@@ -30,7 +34,7 @@ width:700px;
 height:50px;
 /* background-color:red; */
 text-decoration:none;
-margin-top:100px;
+margin-top:700px;
 
 h6{
 font-family: 'Cerebri Sans';
@@ -173,7 +177,7 @@ top:15px;
 `;
 const Discover = styled.div`
 width:100%;
-height:700px;
+height:800px;
 background-color: #E5E5E5;;
 /* margin-top:30px; */
 display:flex;
@@ -186,7 +190,7 @@ const Discover1 = styled.div`
 width:100%;
 height:100px;
 /* background-color:white; */
-margin:30px;
+margin-top:30px;
 h3{
   font-family: 'Cerebri Sans';
 font-style: normal;
@@ -215,7 +219,7 @@ display:flex;
 flex-wrap:wrap;
 gap:20px;
 justify-content:space-between;
-
+margin-bottom:30px;
 `;
 const Card1 = styled.div`
 background:#FFFFFF;
