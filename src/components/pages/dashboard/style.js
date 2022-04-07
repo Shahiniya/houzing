@@ -8,6 +8,10 @@ background-color:#e5e5e5;
 display:flex;
 flex-direction:column;
 overflow:hidden;
+@media (max-width:1400px) and (min-width:0px) {
+    background-color:red;
+}
+   
 `;
 const BigContainer = styled.div`
 width:100%;
@@ -94,7 +98,8 @@ fill{
 `;
 
 const Card = styled.div`
-width: 350px;
+width: 30%;
+max-width:350px;
 height: 150px;
 background: #FFFFFF;
 border: 1px solid #E6E9EC;

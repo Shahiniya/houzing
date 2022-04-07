@@ -10,16 +10,16 @@ overflow:hidden;
 `;
 const Container1 = styled.div`
 width:100%;
-height:300px;
+height:400px;
 background-color:blue;
-z-index:3;
+/* z-index:3;s */
 position:relative;
 filter:brightness(0.5);
 box-sizing:border-box;
 background-repeat:no-repeat;
 background-size:100% 100%;
 /* filter:brightness(0.6); */
-margin-top:450px;
+margin-top:200px;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -27,10 +27,10 @@ align-items:center;
 
 `;
 const Title = styled.div`
-z-index:5;
+/* z-index:5; */
 position:absolute;
-top:250px;
-left:900px;
+top:300px;
+left:1000px;
 h2{
 font-family: 'Cerebri Sans';
 font-style: normal;
