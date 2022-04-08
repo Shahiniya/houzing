@@ -5,7 +5,7 @@ import {ReactComponent as advanced} from '../../assets/icons/advancedSearch.svg'
 
 
 const Container = styled.div`
-height: 2350px;
+height: 2150px;
 overflow: hidden;
 width:100%;
 display:flex;
@@ -21,7 +21,7 @@ const Container1 = styled.div`
     url(${landing});
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 160vh;
+  height: 85vh;
   overflow: hidden;
 `;
 
@@ -34,7 +34,7 @@ width:700px;
 height:50px;
 /* background-color:red; */
 text-decoration:none;
-margin-top:700px;
+margin-top:200px;
 
 h6{
 font-family: 'Cerebri Sans';

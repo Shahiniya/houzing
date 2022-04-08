@@ -16,9 +16,9 @@ export const Home = () => {
         <p>FIND YOUR PERFECT HOME</p>
       </Title>
         <Link>
-        <NavLink  style={{fontSize:'15px', margin:'20px', color:'white'}} to={'/Buy'}>Buy</NavLink>
-        <NavLink  style={{fontSize:'15px', margin:'20px',color:'white'}} to={'/Rent'}>Rent</NavLink>
-        <NavLink  style={{fontSize:'15px', margin:'20px',color:'white'}} to={'/Sell'}>Sold</NavLink>
+        <NavLink  style={{fontSize:'15px', margin:'20px', color:'white', textDecoration:'none'}} to={'/Buy'}>Buy</NavLink>
+        <NavLink  style={{fontSize:'15px', margin:'20px',color:'white' , textDecoration:'none'}} to={'/Rent'}>Rent</NavLink>
+        <NavLink  style={{fontSize:'15px', margin:'20px',color:'white' , textDecoration:'none'}} to={'/Sell'}>Sold</NavLink>
         </Link>
        
       <Box>

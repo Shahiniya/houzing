@@ -19,12 +19,12 @@ export const Invoice = () => {
                 <CardWrapper>
                 <CardTitle>
                     <h3>#</h3>
-                    <h3>Payment Method</h3>
-                    <h3>Status</h3>
-                    <h3>Transaction</h3>
-                    <h3>Amount</h3>
-                    <h3>Created</h3>
-                    <h3>Updated</h3>
+                    <h5>Payment Method</h5>
+                    <h4>Status</h4>
+                    <h4>Transaction</h4>
+                    <h4>Amount</h4>
+                    <h4>Created</h4>
+                    <h4>Updated</h4>
 
                 </CardTitle>
 

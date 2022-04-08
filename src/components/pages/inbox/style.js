@@ -44,7 +44,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 14px;
 color: #696969;
-
+margin-top:20px;
 }
 
 `;
@@ -68,6 +68,7 @@ height: 774px;
 background: #ffffff;
 border-radius: 3px ;
 position: relative;
+margin-left:50px;
 /* background:red; */
 input{
 width: 388px;

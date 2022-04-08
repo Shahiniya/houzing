@@ -21,7 +21,6 @@ export const Navbar = () => {
         fontStyle: 'normal',
         fontWeight:'700',
         fontSize: '25px',
-        lineHeight: '32px',
         margin:'11px',
         color:'#0D263B',
         textDecoration:'none',
@@ -36,6 +35,12 @@ export const Navbar = () => {
                   return{
                       color: isActive ? 'blue' : 'black',
                       
+                      fontFamily: 'Cerebri Sans',
+                      fontStyle: 'normal',
+                      fontWeight: 600,
+                      fontSize: '13px',
+                      textTransform: 'uppercase',
+                      color: '#0D263B'
                   }}}
                    className='navbar' 
                    to={value.path}

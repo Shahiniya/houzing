@@ -68,16 +68,37 @@ display:flex;
 background: #E6E9EC;
 border-radius: 3px ;
 /* margin-left:50px; */
-justify-content:space-around;
+/* justify-content:space-around; */
 
 h3{
-    margin-top:30px;
-    font-family: 'Cerebri Sans';
+margin-top:30px;
+font-family: 'Cerebri Sans';
 font-style: normal;
 font-weight: 600;
 font-size: 16px;
 color: #0D263B;
-
+margin-left:70px;
+margin-right:80px;
+}
+h4{
+    margin-top:30px;
+font-family: 'Cerebri Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #0D263B; 
+margin-right:100px;
+margin-left:60px;
+}
+h5{
+    margin-top:30px;
+font-family: 'Cerebri Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #0D263B; 
+margin-right:70px;
+margin-left:40px; 
 }
 
 `;
@@ -103,12 +124,12 @@ height:90px;
 display:flex;
 border-bottom:2px solid #E6E9EC;
 h4{
-margin-left:50px;
+margin-left:60px;
 margin-top:20px;
 
 }
 h5{
-    margin-left:140px; 
+    margin-left:150px; 
     margin-top:20px;
 }
 `;
