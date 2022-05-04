@@ -52,4 +52,5 @@ export const Navbar = () => {
     </WrapperContainer>
   )
 }
+// salom
 export default Navbar;
