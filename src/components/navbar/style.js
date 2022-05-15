@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const WrapperContainer = styled.div`
 display:flex;
 position:absolute;
-background-color:#fff;
+background-color:#0d263b;
 top:0;
 left:0;
 width:100%;
@@ -19,7 +19,7 @@ top:0;
 left:0;
 width:100%;
 height:95px;
-background-color:#ffffff;
+background-color:#0d263b;
 border: 1px solid #E6E9EC;
 box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
 

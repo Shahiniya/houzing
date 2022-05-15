@@ -22,7 +22,7 @@ export const Navbar = () => {
         fontWeight:'700',
         fontSize: '25px',
         margin:'11px',
-        color:'#0D263B',
+        color:'white',
         textDecoration:'none',
 
             }
@@ -33,14 +33,13 @@ export const Navbar = () => {
         return(
             <NavLink key={value.id} style={({isActive}) => {
                   return{
-                      color: isActive ? 'blue' : 'black',
-                      
+                      color: isActive ? 'white' : 'white',
                       fontFamily: 'Cerebri Sans',
                       fontStyle: 'normal',
                       fontWeight: 600,
                       fontSize: '13px',
                       textTransform: 'uppercase',
-                      color: '#0D263B'
+                      color: 'white'
                   }}}
                    className='navbar' 
                    to={value.path}

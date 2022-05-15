@@ -1,6 +1,6 @@
 import {React,useEffect,useState} from 'react'
 import { Card, Card1, Container, ContainerWrapper, Img, WrapperContainer } from './style';
-import {NavLink,UseEffect} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import Navbar from '../../navbar/navbar';
 import { Footer } from '../../footer';
 import { shop } from '../../../utils/shop';
